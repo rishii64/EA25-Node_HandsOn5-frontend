@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 .App {
   width: 100vw;
   height: 100vh;
@@ -11,7 +12,6 @@ body {
   margin: 0%;
   padding: 0%;
 }
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 
 .joinChatContainer {
   display: flex;
@@ -101,7 +101,6 @@ body {
   height: auto;
   min-height: 40px;
   max-width: 120px;
-  background-color: #43a047;
   border-radius: 5px;
   color: white;
   display: flex;
@@ -114,31 +113,34 @@ body {
   word-break: break-word;
 }
 
-#you {
+.you {
   justify-content: flex-start;
 }
 
-#you .message-content {
+.you .message-content {
   justify-content: flex-start;
+  background-color: #43a047;
 }
 
-#you .message-meta {
+.you .message-meta {
   justify-content: flex-start;
-  margin-left: 5px;
+  gap: 5px;
+  align-items: center;
 }
 
-#other {
+.other {
   justify-content: flex-end;
 }
 
-#other .message-content {
+.other .message-content {
   justify-content: flex-end;
   background-color: cornflowerblue;
 }
 
-#other .message-meta {
+.other .message-meta {
   justify-content: flex-end;
-  margin-right: 5px;
+  gap: 5px;
+  align-items: center;
 }
 
 .message-meta #author {
