@@ -51,9 +51,6 @@ function Chat({ socket, username, room }) {
         <input type="text" value={currentMessage} placeholder="type something..." onChange={(event) => {
             setCurrentMessage(event.target.value);
           }}
-          // onKeyPress={(event) => {
-          //   event.key === "Enter" && sendMessage();
-          // }}
           onKeyDown={(event) => {
               event.key === "Enter" && sendMessage();
             }}
