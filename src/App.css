@@ -9,14 +9,14 @@
   place-items: center;
 }
 body {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 .joinChatContainer {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
 
 .joinChatContainer h3 {
@@ -29,7 +29,7 @@ body {
   margin: 7px;
   border: 2px solid #43a047;
   border-radius: 5px;
-  padding: 5px;
+  padding: 0 15px;
   font-size: 16px;
 }
 
@@ -62,15 +62,22 @@ body {
   height: 45px;
   border-radius: 6px;
   background: #263238;
-  position: relative;
+  color: white;
   cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em 0 2em;
 }
 .chat-window .chat-header p {
-  display: block;
-  padding: 0 1em 0 2em;
-  color: #fff;
   font-weight: 700;
-  line-height: 45px;
+}
+.chat-window .chat-header button {
+  width: 5em;
+  height: 1.6em;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .chat-window .chat-body {

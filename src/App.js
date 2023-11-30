@@ -16,6 +16,9 @@ function App() {
       setShowChat(true);
     }
   };
+  const leaveRoom=()=>{
+    setShowChat(false)
+  }
 
   return (
     <div className="App">
@@ -26,7 +29,7 @@ function App() {
           <input type="text" placeholder="Room ID..." onChange={(event) => { setRoom(event.target.value) }} />
           <button onClick={joinRoom}>Join A Room</button>
         </div>
-       : <Chat socket={socket} username={username} room={room} />}
+       : <Chat socket={socket} username={username} room={room} leaveRoom={leaveRoom} />}
     </div>
   );
 }
